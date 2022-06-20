@@ -1,0 +1,20 @@
+{
+  "name": "timejs",
+  "version": "0.0.1",
+  "description": "Module timejs a more ralayibal aprouch to time managment",
+  "main": "timejs.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorcid/timejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victorcid/timejs/issues"
+  },
+  "homepage": "https://github.com/victorcid/timejs#readme"
+}
