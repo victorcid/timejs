@@ -58,22 +58,21 @@ function getTimeL(time,timeZone){
 
 
 {
-    -660:[Niue,NUT,Samoa Americana,SST],
-    -600:[Islas Cook,CKT, Estados Unidos,HST, Polinesia Francesa,TAHT],
-    -569:[Polinesia Francesa,MART],
-    -540:[Canadá, Estados Unidos,AKST, Polinesia Francesa,GAMT, Estados Unidos,HDT],
-    -480:[Canadá, Estados Unidos,AKDT, Canadá, Estados Unidos,PST, Islas Pitcairn,PST],
-    -420:[Canadá, Estados Unidos, México,MST, Canadá, Estados Unidos,PDT],
-    -360:[Belice, Canadá, Costa Rica, El Salvador, Estados Unidos, Guatemala, Honduras, México, Nicaragua,CST, Chile,EAST, Ecuador,GALT, Canadá, Estados Unidos, México,MDT],
-    -300:[Brasil,ACT, Canadá, Estados Unidos, México,CDT, Colombia,COT, Cuba,CST, Chile,EASST, Bahamas, Canadá, Estados Unidos, Haití, Islas Caimán, Islas Turcas y Caicos, Jamaica, México,
-         Panamá,EST, Ecuador,ECT, Perú,PET],
-    -240:[Brasil,AMT,Anguila, Antigua y Barbuda, Aruba, Barbados, Bermudas, Bonaire, San Eustaquio y Saba, Canadá, Curaçao, Dominica, Granada, Groenlandia, Guadalupe, Isla de San Martín, Islas
-         Vírgenes (UK), Islas Vírgenes Americanas, Martinica, Montserrat, Puerto Rico, República Dominicana, San Bartolomé, San Cristóbal y Nieves, San Vicente y las Granadinas, Santa Lucía, Sint Maarten, Trinidad y Tobago,AST, Bolivia,BOT, Chile,CLT, Cuba,CDT, Bahamas, Canadá, Estados Unidos, Haití, Islas Turcas y Caicos,EDT, Guayana,GYT, Paraguay,PYT, Venezuela,VET],
-    -209:[Canadá,NST],
-    -180:[Brasil,AMST, Antártida, Argentina,ART, Antigua y Barbuda, Bermudas, Canadá, Groenlandia,ADT, Brasil,BRT, Chile,CLST, Islas Malvinas,FKT, Guayana Francesa,GFT, Paraguay,PYST,
-         San Pedro y Miquelón,PMST, Surinam,SRT, Uruguay,UYT, Groenlandia,WGT],
-    -149:[ Canadá,NDT ],
-    -120:[Brasil,BRST, San Pedro y Miquelón,PMDT, Georgia del Sur y las Islas Sandwich del Sur,GST, Groenlandia,WGST],
+
+
+    -660:['Niue','NUT','Niuē','Alofi','mataafi','tahileleki','patuoko','Samoa Americana','SST','American Samoa' ,'sam','pago pago','Amerika Sāmoa','Sāmoa Amelika'],
+    -600:['Cook','CKT','avarua', 'Cook', 'Kuki ’Āirani', 'Hawaii',"Hawai'i", '‎Honolulu','HST', 'Polinesia Francesa', 'Polynésie Française', 'Porinetia Farani','TAHT'],
+    -569:['Marquesas', 'Marquises', 'henua enana', 'Fenua enata','MART'],
+    -540:['Metlakatla','Anchorage','alaska','Alax̂sxax̂','Alaasikaq','AKST','Alaskaq', 'Anáaski', 'Gambier','GAMT', 'HDT'],
+    -480:['AKDT', 'Canadá/Pacífico', 'Estados Unidos/Pacífico', 'Canada/Pacific', 'United States/Pacific', 'PST', 'Pacific Standard Time','Hora estándar del Pacífico','Los Angeles','Vancouver', 'Pitcairn','Pitkern','PST'],
+    -420:['Inuvik', 'Phoenix', 'Hermosillo','MST', 'PDT' 'Dawson'],
+    -360:['Belice','Belize ', 'Resolute', 'Costa Rica', 'El Salvador', 'Menominee', 'Guatemala', 'Honduras', 'Matamoros', 'Nicaragua','CST' ,'Central Standard Time', 'Hora estándar Central', 'Chile/este','EAST', 'Galápagos','GALT', 'MDT'],
+    -300:['Acre','Rio Branco','ACT', 'Toronto', 'New York', 'Eastern Standard Time', 'CDT', 'Colombia','COT', 'Cuba','CST', 'Guayaquil',EASST, 'Bahamas', Canadá, Estados Unidos, 'Haití', 'Caimán' 'Cayman', 'Turcas', 'Turks', 'Caicos','Cockburn', 'Jamaica', 'Cancún', 'Panamá', 'EST', 'ECT', 'Perú','PET'],
+    -240:['Porto Velho','Amazon Time','Hora del Amazonas','AMT', 'Anguila', 'Antigua' , 'Barbuda', 'Aruba', 'Barbados', 'Bermudas', 'Bonaire', 'San Eustaquio'  'Saba', 'Blanc-Sablon', 'Curaçao', 'Dominica', 'Granada', 'Thule', 'Guadalupe', 'San Martín', 'Vírgenes', 'Vírgenes Americanas', 'Martinica', 'Montserrat', 'Puerto Rico', 'República Dominicana', 'San Bartolomé', 'San Cristóbal' 'Nieves', 'San Vicente' 'Granadinas', 'Santa Lucía', 'Sint Maarten', 'Trinidad', 'Tobago','AST', 'Bolivia','BOT', 'Santiago','CLT', 'CDT', 'EDT', 'Guayana','GYT', 'Paraguay','PYT', 'Venezuela','VET'],
+    -209:['	St Johns','NST'],
+    -180:['Bahia','AMST', 'Palmer', 'Argentina','ART', 'Antigua', 'Barbuda', 'Bermudas', 'Moncton', 'Nuuk', 'ADT', 'Manaus', 'BRT', 'CLST', 'Malvinas','FKT', 'Guayana Francesa','GFT', 'PYST', 'San Pedro', 'Miquelón', 'PMST', 'Surinam','SRT', 'Uruguay','UYT', 'WGT'],
+    -149:[ 'NDT' ],
+    -120:['BRST', 'PMDT', 'Georgia del Sur', 'Sandwich del Sur','GST', 'WGST'],
     -60:[Portugal,AZOT, Cabo Verde,CVT, Groenlandia,EGT],
     0:[Portugal,AZOST, Antártida, Bailía de Guernsey, Burkina Faso, Costa de Marfil, Gambia, Ghana, Groenlandia, Guinea, Guinea-Bissau, Irlanda, Isla de Man, Islandia, Jersey, Liberia, Malí,
       Mauritania, Reino Unido, Santa Elena, Ascensión y Tristán de Acuña, Senegal, Sierra Leona, Togo,GMT, Angola, Benín, Camerún, Chad, Congo, Gabón, Guinea Ecuatorial, Nigeria, Níger, República Centroafricana, República Democrática del Congo, Santo Tomé y Príncipe,WAT, España, Islas Feroe, Marruecos, Portugal, Sáhara Occidental,WET, Groenlandia,EGST],
@@ -107,4 +106,8 @@ function getTimeL(time,timeZone){
     780:[Fiji,FJDT, Antártida, Nueva Zelandia,NZDT, Kiribati,PHOT, Tokelau,TKT, Tonga,TOT, Samoa,WST],
     825:[Nueva Zelandia,CHADT],
     840:[Kiribati,LINT, Samoa,WSDT],
+}
+
+for (var i = 0; i < array.length; i++) {
+    array[i]
 }
