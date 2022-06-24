@@ -58,8 +58,6 @@ function getTimeL(time,timeZone){
 
 
 {
-
-
     -660:['Niue','NUT','Niuē','Alofi','mataafi','tahileleki','patuoko','Samoa Americana','SST','American Samoa' ,'sam','pago pago','Amerika Sāmoa','Sāmoa Amelika'],
     -600:['Cook','CKT','avarua', 'Cook', 'Kuki ’Āirani', 'Hawaii',"Hawai'i", '‎Honolulu','HST', 'Polinesia Francesa', 'Polynésie Française', 'Porinetia Farani','TAHT'],
     -569:['Marquesas', 'Marquises', 'henua enana', 'Fenua enata','MART'],
@@ -73,12 +71,11 @@ function getTimeL(time,timeZone){
     -180:['Bahia','AMST', 'Palmer', 'Argentina','ART', 'Antigua', 'Barbuda', 'Bermudas', 'Moncton', 'Nuuk', 'ADT', 'Manaus', 'BRT', 'CLST', 'Malvinas','FKT', 'Guayana Francesa','GFT', 'PYST', 'San Pedro', 'Miquelón', 'PMST', 'Surinam','SRT', 'Uruguay','UYT', 'WGT'],
     -149:[ 'NDT' ],
     -120:['BRST', 'PMDT', 'Georgia del Sur', 'Sandwich del Sur','GST', 'WGST'],
-    -60:[Portugal,AZOT, Cabo Verde,CVT, Groenlandia,EGT],
-    0:[Portugal,AZOST, Antártida, Bailía de Guernsey, Burkina Faso, Costa de Marfil, Gambia, Ghana, Groenlandia, Guinea, Guinea-Bissau, Irlanda, Isla de Man, Islandia, Jersey, Liberia, Malí,
-      Mauritania, Reino Unido, Santa Elena, Ascensión y Tristán de Acuña, Senegal, Sierra Leona, Togo,GMT, Angola, Benín, Camerún, Chad, Congo, Gabón, Guinea Ecuatorial, Nigeria, Níger, República Centroafricana, República Democrática del Congo, Santo Tomé y Príncipe,WAT, España, Islas Feroe, Marruecos, Portugal, Sáhara Occidental,WET, Groenlandia,EGST],
-    60:[Bailía de Guernsey, Isla de Man, Jersey, Reino Unido,BST,Svalbard, Jan Mayen, Túnez,CET, Irlanda,IST, España, Islas Feroe, Portugal,WEST],
-    120:[Botsuana, Burundi, Malaui, Mozambique, Namibia, República Democrática del Congo, Ruanda, Sudán, Sudán del Sur, Zambia, Zimbabue,CAT, Albania, Alemania, Andorra, Antártida, Austria,
-        Bosnia y Hercegovina, Bélgica, Chequia, Ciudad del Vaticano, Croacia, Dinamarca, Eslovaquia, Eslovenia, España, Francia, Gibraltar, Hungría, Isla Bouvet, Italia, Kosovo, Liechtenstein, Luxemburgo, Macedonia del Norte, Malta, Montenegro, Noruega, Países Bajos, Polonia, Principado de Mónaco, San Marino, Serbia, Suecia, Suiza, Svalbard y Jan Mayen,CEST, Israel,IST, Esuatini, Lesotho, Sudáfrica,SAST, Bulgaria, Chipre, Egipto, Estonia, Finlandia, Grecia, Islas Åland, Jordania, Letonia, Libia, Lituania, Líbano, Moldavia, Palestina, Rumania, Rusia, Siria, Ucrania,EET]
+    -60:['Azores','AZOT', 'Cabo Verde','CVT', 'Scoresbysund','EGT'],
+    0:['AZOST', Antártida, 'Bailía de Guernsey', 'Burkina Faso', 'Costa de Marfil', 'Gambia', 'Ghana', 'Danmarkshavn', 'Guinea', 'Guinea-Bissau', 'Irlanda', 'Man', 'Islandia', 'Jersey', 'Liberia', 'Malí', 'Mauritania', 'Reino Unido', 'Santa Elena', 'Ascensión' , 'Tristán de Acuña', 'Senegal' , 'Sierra Leona', 'Togo','GMT', 'Angola', 'Benín', 'Camerún', 'Chad', 'Congo', 'Gabón', 'Guinea Ecuatorial', 'Nigeria', 'Níger', 'Centroafricana','Kinshasa', 'Santo Tomé' 'Príncipe','WAT', 'Canarias', 'Feroe', 'Marruecos', 'Sáhara' ,'WET', 'EGST', 'UTC', 'Troll'],
+    60:['Reino Unido/BST','Hora de verano Británico','British Summertime','Svalbard', 'Jan Mayen', 'Túnez','CET','IST', 'Ceuta','Madrid',  WEST],
+    120:[Botsuana, 'Burundi', 'Malaui', 'Mozambique', 'Namibia', 'Lubumbashi', 'Ruanda', Sudán, Sudán del Sur, Zambia, Zimbabue,CAT, Albania, Alemania, Andorra, Antártida, Austria,
+        Bosnia y Hercegovina, Bélgica, Chequia, Ciudad del Vaticano, Croacia, Dinamarca, Eslovaquia, Eslovenia,  Francia, Gibraltar, Hungría, Isla Bouvet, Italia, Kosovo, Liechtenstein, Luxemburgo, Macedonia del Norte, Malta, Montenegro, Noruega, Países Bajos, Polonia, Principado de Mónaco, San Marino, Serbia, Suecia, Suiza, CEST, Israel,IST, Esuatini, Lesotho, Sudáfrica,SAST, Bulgaria, Chipre, Egipto, Estonia, Finlandia, Grecia, Islas Åland, Jordania, Letonia, Libia, Lituania, Líbano, Moldavia, Palestina, Rumania, Rusia, Siria, Ucrania,EET]
     180:[Comores, Madagascar, Mayotte,EAT, Eritrea, Etiopía, Kenia, Somalia, Tanzania, Uganda, Yibuti,EAT, Bulgaria, Chipre, Estonia, Finlandia, Grecia, Islas Åland, Jordania, Letonia, Lituania,
          Líbano, Moldavia, Palestina, Rumania, Siria, Ucrania,EEST, Israel,IDT, Belarús, Rusia, Ucrania,MSK, Turquía,TRT],
     210:[Irán,IRST],
@@ -107,6 +104,9 @@ function getTimeL(time,timeZone){
     825:[Nueva Zelandia,CHADT],
     840:[Kiribati,LINT, Samoa,WSDT],
 }
+
+
+
 
 for (var i = 0; i < array.length; i++) {
     array[i]
